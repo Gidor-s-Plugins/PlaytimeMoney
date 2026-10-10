@@ -1,0 +1,33 @@
+# ─── PlaytimeMoney ───────────────────────────────────────────
+
+hourly:
+  enabled: true
+  amount: 500.0
+  interval-minutes: 60
+
+daily:
+  enabled: true
+  amount: 1500.0
+  timezone: "Europe/Budapest" # checks for midnight
+
+autosave-minutes: 5 # how often do we save to DB. (asyncron and only saves changed players)
+
+sounds:
+  reward: ENTITY_PLAYER_LEVELUP
+  volume: 1.0
+  pitch: 1.0
+
+messages:
+  prefix: "&8[&6PlaytimeMoney&8] "
+  hourly: "&aYou received your hourly bonus: &e+%amount% &a(total playtime: &e%playtime%&a)."
+  daily: "&aDaily login bonus: &e+%amount%&a!"
+  economy-unavailable: "&cThe economy system is unavailable, the bonus was skipped."
+  info-header: "&6Bonus status"
+  info-playtime: "&7Total playtime: &e%playtime%"
+  info-next-hourly: "&7Next hourly bonus in: &e%minutes% minutes &7(&a%amount%&7)"
+  info-daily-claimed: "&7Today's daily bonus: &aAlready claimed"
+  info-daily-pending: "&7Today's daily bonus: &eNot claimed yet"
+  not-loaded: "&cYour data is still loading, please try again in a moment."
+  no-permission: "&cYou don't have permission to do that."
+  players-only: "&cThis command can only be used by players."
+  reloaded: "&aConfiguration reloaded."

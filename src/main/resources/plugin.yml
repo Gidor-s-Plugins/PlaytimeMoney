@@ -1,0 +1,19 @@
+name: PlaytimeMoney
+version: '${project.version}'
+main: gidor.playtimebonus.PlaytimeMoney
+api-version: '1.21'
+description: Hourly (playtime based) and daily login money bonuses.
+depend: [Vault]
+
+commands:
+  pmoney:
+    description: Show your bonus progress.
+    usage: /<command> [reload]
+
+permissions:
+  playtimemoney.use:
+    description: Allows /pmoney.
+    default: true
+  playtimemoney.admin:
+    description: Allows /pmoney reload.
+    default: op
